@@ -6,8 +6,9 @@
   "scripts": {
     "test": "npm run lint",
     "start": "node script.js",
-    "lint": "eslint --ignore-path .gitignore ."
-  },
+    "lint": "eslint --ignore-path .gitignore .",
+    "deploy": "npx firebase deploy --token $FIREBASE_TOKEN"
+},
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint -- --fix"
