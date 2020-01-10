@@ -10,7 +10,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint -- --fix && npx prettier script.js --write"
+      "pre-commit": "npm run lint -- --fix"
     }
   },
   "author": "",
